@@ -136,7 +136,7 @@ export default function DoctorDashboard(){
   
     useEffect(() => {
       // Fetch data from your API
-      axios.get('http://localhost:8000/appointments/appointments')
+      axios.get('https://mock3-l3c9.onrender.com/appointments/appointments')
         .then((response) => setDoctors(response.data))
         .catch((error) => console.error('Error fetching data:', error));
     }, []);
