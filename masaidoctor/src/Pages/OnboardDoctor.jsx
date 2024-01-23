@@ -25,7 +25,7 @@ export default function OnboardDoctor() {
   
       try {
         // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint
-        const response = await axios.post('http://localhost:8000/appointments/appointments', formData);
+        const response = await axios.post('https://mock3-l3c9.onrender.com/appointments/appointments', formData);
         console.log('Data posted successfully:', response.data);
       } catch (error) {
         console.error('Error posting data:', error);
